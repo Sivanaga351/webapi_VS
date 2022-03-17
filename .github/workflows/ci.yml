@@ -1,0 +1,10 @@
+name: Deploy webapi
+
+on: push
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy webapi
+        run: furkanisitan/dotnet-5-web-api-sample
