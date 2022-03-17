@@ -6,5 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy webapi
-        run: furkanisitan/dotnet-5-web-api-sample
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Deploy donet  
+        uses: furkanisitan/dotnet-5-web-api-sample@v1
+        with:
+          dotnet-version: '5.0.x'
+            
